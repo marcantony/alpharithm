@@ -1,0 +1,13 @@
+{
+  "name": "alpharithm",
+  "version": "1.0.0",
+  "description": "Optimizes currency exchange paths for profit.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcantony/alpharithm.git"
+  },
+  "author": "",
+  "license": "",
+  "homepage": "https://github.com/marcantony/alpharithm#readme"
+}
