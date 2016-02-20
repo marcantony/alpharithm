@@ -2,12 +2,22 @@
   "name": "alpharithm",
   "version": "1.0.0",
   "description": "Optimizes currency exchange paths for profit.",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcantony/alpharithm.git"
   },
-  "author": "",
-  "license": "",
-  "homepage": "https://github.com/marcantony/alpharithm#readme"
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install",
+    "start": "node node_modules/gulp/bin/gulp.js dev"
+  },
+  "homepage": "https://github.com/marcantony/alpharithm#readme",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.5",
+    "rimraf": "^2.5.2"
+  }
 }

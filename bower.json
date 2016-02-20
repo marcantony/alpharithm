@@ -1,0 +1,22 @@
+{
+  "name": "alpharithm",
+  "description": "Optimizes currency exchange paths for profit.",
+  "main": "index.js",
+  "authors": "",
+  "license": "",
+  "homepage": "https://github.com/marcantony/alpharithm",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.0"
+  }
+}
