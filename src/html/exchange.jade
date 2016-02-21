@@ -1,12 +1,12 @@
-.row
+.row.full-height
 	.col-md-4
 		form(name="money")
 			.input-group.input-group-lg(ng-class="!money.input.$valid ? 'has-error' : ''")
 				span.input-group-addon $
 				input.form-control(type="number", name="input", min="0", step="any", \
-					ng-model="input.amt", ng-pattern="/^[0-9]*(?:\.[0-9]{2})?$/", ng-required="true")
+					ng-model="input.amt", ng-pattern="currencyRegex", ng-required="true")
 				span.input-group-btn
 					button.btn(ng-class="!money.input.$valid ? 'btn-danger' : 'btn-default'", \
 						ng-disabled="!money.input.$valid", ng-click="submit()") Go
-	.col-md-offset-2.col-md-6
-		div(ng-bind="input.amt")
+	.col-md-offset-2.col-md-6.full-height
+		.panel.panel-default.full-height-panel(vis-network, data="graph.data", options="graph.options", events="graph.events")

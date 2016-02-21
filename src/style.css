@@ -1,0 +1,13 @@
+.full-height {
+	height: 100%;
+}
+
+.full-height-container {
+	/* 50px header, 20px header margin, 2px header border */
+	height: calc(100% - 50px - 20px - 2px);
+}
+
+.full-height-panel {
+	/* 20px panel margin, 2px panel border */
+	height: calc(100% - 20px - 2px);
+}

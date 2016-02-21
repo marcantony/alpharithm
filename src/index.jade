@@ -1,15 +1,15 @@
 doctype html
-html(ng-app="app")
+html.full-height(ng-app="app")
     head
         title Alpharithm
         base(href="/")
         link(href="/style.css", rel="stylesheet")
         link(href="/lib/bootstrap/dist/css/bootstrap.css", rel="stylesheet")
-    body
+        link(href="/lib/vis/dist/vis.css", rel="stylesheet")
+    body.full-height
         div(ng-include="'/html/tmplt/header.html'")
 
-        .container
-            div(ng-view)
+        .container.full-height-container(ng-view)
 
         script(src="/lib/jquery/dist/jquery.js")
         script(src="/lib/angular/angular.js")
