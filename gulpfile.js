@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     watch = require('gulp-watch'),
     connect = require('gulp-connect'),
-    rimraf = require('rimraf');
+    del = require('del');
 
 var SRC = 'src/',
     DIST = 'dist/';
@@ -23,8 +23,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src(DIST + '**/*', {read: false})
-        .pipe(rimraf());
+    return del([DIST + '**/*', '!' + DIST]);
 });
 
 gulp.task('watch-jade', function () {

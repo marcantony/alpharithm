@@ -8,16 +8,17 @@
   },
   "scripts": {
     "postinstall": "node node_modules/bower/bin/bower install",
-    "start": "node node_modules/gulp/bin/gulp.js dev"
+    "start": "node node_modules/gulp/bin/gulp.js dev",
+    "clean": "node node_modules/gulp/bin/gulp.js clean"
   },
   "homepage": "https://github.com/marcantony/alpharithm#readme",
   "devDependencies": {
     "bower": "^1.7.7",
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^2.3.1",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-watch": "^4.3.5",
-    "rimraf": "^2.5.2"
+    "gulp-watch": "^4.3.5"
   }
 }
