@@ -3,17 +3,14 @@
 * Alpha: The active return on an investment.
 * Algorithm: A procedure for solving a problem.
 
-Alpharithm uses the Euler-Lagrange equation for path optimization between currency exchanges.
+Alpharithm uses a NEAT algorithm to analyze currency exchange rates.
 For any instant in time, it can find the best sequence of exchanges to make for maximum profit.
 
 ## Setup
-To run, you must have the following tools installed:
-  1. [Node.js](http://nodejs.org)
-  2. Bower (`npm install -g bower`)
+To run, you must have [node.js](http://nodejs.org) installed.
 
-Install dependencies with the following commands:
-  1. 'npm install'
-  2. 'bower install'
+Install dependencies with `npm install`.
   
 ## Usage
-Use 'gulp dev' to process Jade files and run the file server.
+Use `npm start` to process Jade files and run the file server. Connect to `localhost:8080`
+to see the web application.
